@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #3498db; /* Light Blue */
+    color: white;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item a:hover {
+    background-color: #2980b9; /* Darker Blue */
+    color: #ecf0f1; /* Light Gray */
+}
+
+.nav-item a.active {
+    background-color: #1abc9c; /* Green */
+    color: #ecf0f1; /* Light Gray */
+}
+
+.content {
+    padding-top: 70px;
+    text-align: center;
+    
+}
+
+section {
+    padding: 50px;
+    min-height: 100vh;
+}
+
+section:nth-child(odd) {
+    background-color: #ecf0f1; /* Light Gray */
+    color: #2c3e50; /* Dark Blue */
+}
+
+section:nth-child(even) {
+    background-color: #bdc3c7; /* Gray */
+    color: #2c3e50; /* Dark Blue */
+}
+
+h1 {
+    color: #2c3e50; /* Dark Blue */
+    font-size: 3em;
+}
+h1:hover{
+    color: crimson;
+}
+
+p {
+    color: #34495e; /* Medium Dark Blue */
+    font-size:xx-large
+}
