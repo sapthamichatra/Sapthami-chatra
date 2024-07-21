@@ -1,7 +1,6 @@
-// Initialize EmailJS
+
 (function() {
-    emailjs.init("user-id"); // Replace with your EmailJS User ID
-})();
+    emailjs.init("user-id"); 
 
 
 document.addEventListener('DOMContentLoaded', function() {
