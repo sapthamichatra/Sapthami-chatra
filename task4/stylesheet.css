@@ -114,7 +114,9 @@ body {
 .home-image img {
     max-width: 100%;
     max-height: 100%;
-    border-radius: 10px;
+    border-radius: 500px;
+    border: 5px solid #0ef; 
+    box-shadow: 0 0 500px #0ef, 0 0 25px #0ef;
 }
 
 .home-sci a {
@@ -179,32 +181,20 @@ body {
 
 .about-img img {
     width: 200px; /* Adjust width as needed */
-    height: 200px; /* Ensure height is equal to width for a perfect circle */
-    border-radius: 50%; /* Make the image circular */
+    height: 300px; /* Ensure height is equal to width for a perfect circle */
     object-fit: cover; /* Ensure the image covers the circle without distortion */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add a soft shadow around the image */
+    box-shadow: 0 0 500px #0ef, 0 0 250px #0ef;
     border: 5px solid #0ef; /* Add a border with cyan color */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
 .about-img img:hover {
     transform: scale(1.1); /* Slightly enlarge the image on hover */
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5); /* Increase shadow intensity on hover */
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
 }
 
-/* Optional: Add a background effect to the container */
-.about-img::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 220px; /* Slightly larger than the image */
-    height: 220px; /* Ensure height matches width for a circle */
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay with some transparency */
-    transform: translate(-50%, -50%); /* Center the shadow */
-    z-index: -1; /* Place the overlay behind the image */
-}
+
+
 
 .about-text h2 {
     font-size: 60px;
@@ -252,6 +242,7 @@ section {
 
 .container1 .heading1 {
     text-align: center;
+    align-items: center;
     padding-top: 5%;
     text-decoration: underline;
     text-underline-offset: 10px;
@@ -333,6 +324,8 @@ section {
 
 .radial-bars {
     display: inline-block;
+    align-items: center;
+    padding-left: 40px;
     margin: 20px;
     position: relative;
 }
